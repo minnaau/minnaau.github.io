@@ -34,9 +34,14 @@ nav a:hover, nav a:focus {
 }
 
 nav {
-    background-color: #ddd;
+    background-color: #e6ebeb;
     padding: 25px 0; 
     text-align: left;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -70px;
 }
 
 main {
