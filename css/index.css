@@ -1,0 +1,143 @@
+body {
+    color: #402a20;
+    font-size: 16px;
+    margin: 1.2em;
+    background-size: cover ;
+    background-position: center;
+    background-image: url("../imgs/pinkbg.jpg"); 
+    /*Why do I need the ../ here but not for css files?*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e1f4fa;
+}
+
+nav li {
+    display:inline;
+    padding-left:20px;  
+    font-family: 'Raleway', sans-serif; 
+}
+
+nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+nav {
+    background-color: #ddd;
+    padding: 25px 0; 
+    text-align: left;
+}
+
+main {
+    padding-top: 50px;
+}
+
+.main {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', serif;
+}
+
+.main a:visited {
+    color: #402a20;
+}
+
+.main a:hover, .main a:focus, .main a:active {
+    /* color: #6696ff; */
+    color: #b33902;
+}
+
+#here1 {
+    background-color:#f2f3fc;
+    border: 3px solid #518e91;
+    color: #518e91;
+    padding: 8px 28px 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 30px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#here1:hover {
+    text-decoration: none;
+    border: 3px solid #e37c7b;
+    color: #e37c7b;
+}
+
+#here2 {
+    background-color:#9da2cf;
+    border: none;
+    color: #54372c;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 30px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+#here2:hover {
+    background-color: #dadcf2;
+    color: #767891;
+    border: none;
+}
+
+#here3 {
+    background-color:#d4c7c3;
+    border: 3px dashed #54372c;
+    color: #54372c;
+    padding: 8px 28px 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 30px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#here3:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+.next {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px;
+    padding-right: 30px;
+    font-size: 14px;
+}
+
+.next a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #e1f4fa;
+    color: #2c373b;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    font-family: 'Raleway', sans-serif;
+}
