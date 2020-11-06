@@ -1,36 +1,43 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover ;
+  background-position: center;
+  background-image: url("../imgs/pinkbg.jpg"); 
+  /*Why do I need the ../ here but not for css files?*/
+  background-color: #e1f4fa;
 }
 
 form {
-  border: 3px solid #f1f1f1;
+  display: grid;
+  /* grid-column: 2; */
 }
 
-legend{ 
+/* legend{ 
   font-size: 125%;
   font-style:italic;
   text-transform: uppercase;
   text-align: center;
-}
+} */
 
-label{
+/* label{
   display: inline-block;
   margin-right:10px;
   width:15%;
-}
+} */
+
 input {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
   box-sizing: border-box;
 }
-span{
+
+/* span{
   margin-left:20%;
   font-family: italic;
   font-weight: bold;
-}
+} */
 
 textarea{
   width: 100%;
@@ -38,10 +45,9 @@ textarea{
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
   box-sizing: border-box;
 }
-
 
 input[type=checkbox]{
     display:inline;
@@ -49,7 +55,7 @@ input[type=checkbox]{
 }
 
 input[type=submit] {
-  background-color: #38803C;
+  background-color: #a35279;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -60,18 +66,6 @@ input[type=submit] {
 
 input[type=submit]:hover {
   opacity: 0.8;
-}
-
-footer {
-  background-color: #e1f4fa;
-  color: #2c373b;
-  padding: 25px;
-  margin: 0px;
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
 }
 
 

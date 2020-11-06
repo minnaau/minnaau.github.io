@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #402a20;
     font-size: 16px;
@@ -289,14 +293,10 @@ p#bottom {
     background-repeat: no-repeat; /* Parallax effect */
     background-size: cover;       /* Parallax effect */
     background-color: #e6f9fc;
-    background-image: url("../imgs/abstractpink.jpg"); 
-    /* text-align: center; */
+    background-image: url("../imgs/abstractyellow.jpg");
     justify-self: center;
     align-self: center; 
     gap: 10px 10px; 
-    /* padding: 100px;
-    padding-left: 300px;
-    padding-right: 300px; */
     font-size: 16px;
     font-family: 'Montserrat', serif;
     grid-row: 1 / auto;
@@ -311,7 +311,7 @@ p#bottom {
 }
 
 .aboutme {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -357,4 +357,38 @@ p#email {
     font-size: 22px;
     padding: 20px;
     text-align: center;
+}
+
+/* ---------------------------------------- CONTACT.HTML ---------------------------------------- */
+
+.getintouch {
+    text-align: center;
+    padding: 30px 60px;
+}
+
+.getintouch h1 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.getintouch p {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#name_id {
+    grid-column: 1 / span 1;
+}
+
+#email_id {
+    grid-column: 2 / span 1;
+}
+
+/* ---------------------------------------- LAPTOP VIEW ---------------------------------------- */
+
+@media screen and (min-width: 770px) {
+    
+
+
 }
