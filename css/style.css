@@ -1,0 +1,360 @@
+body {
+    color: #402a20;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f9f9f9; /* #fffbfa;  */
+}
+
+nav li {
+    display:inline;
+    padding-left:20px;  
+    font-family: 'Raleway', sans-serif; 
+}
+
+nav a {
+    color: #381d2a;
+    font-weight: bold;
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+nav {
+    background-color: #edece9; /* #3e6990; */ /* e6ebeb; */
+    border-bottom: 1px solid #f5f5f5;
+    padding: 25px 0; 
+    text-align: left;
+    color: #381d2a;
+    /* position: fixed;
+    width: 100%; */
+}
+
+/* main {
+    padding-top: 100px;
+    min-height: 90vh;
+} */
+
+footer {
+    background-color: #e1f4fa;
+    color: #2c373b;
+    padding: 25px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    position: relative;
+    width: 100%;
+}
+/* https://css-tricks.com/couple-takes-sticky-footer/ */
+
+/* ---------------------------------------- INDEX.HTML ---------------------------------------- */
+
+.challenge {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', serif;
+    padding-top: 100px;
+}
+
+.challenge a:visited {
+    color: #402a20;
+}
+
+.challenge a:hover, .challenge a:focus, .challenge a:active {
+    color: #b33902;
+}
+
+#here1 {
+    background-color:#f2f3fc;
+    border: 3px solid #518e91;
+    color: #518e91;
+    padding: 8px 28px 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 30px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#here1:hover {
+    text-decoration: none;
+    border: 3px solid #e37c7b;
+    color: #e37c7b;
+}
+
+#here2 {
+    background-color:#9da2cf;
+    border: none;
+    color: #54372c;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 30px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+#here2:hover {
+    background-color: #dadcf2;
+    color: #767891;
+    border: none;
+}
+
+#here3 {
+    background-color:#d4c7c3;
+    border: 3px dashed #54372c;
+    color: #54372c;
+    padding: 8px 28px 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 30px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#here3:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+.next {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px;
+    padding-right: 30px;
+    font-size: 14px;
+}
+
+.next a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------- WORK.HTML ---------------------------------------- */
+
+.opening {
+    display: grid;
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    background-color: #e6f9fc;
+    background-image: url("../imgs/abstractpink.jpg"); 
+    text-align: center;
+    justify-self: center;
+    align-self: center; 
+    gap: 10px 10px; 
+    /* padding: 100px;
+    padding-left: 300px;
+    padding-right: 300px; */
+    font-size: 16px;
+    font-family: 'Montserrat', serif;
+    grid-row: 1 / auto;
+    grid-column: 1 / -1;
+    /* grid-template-rows: auto 60% auto; */
+    grid-template-columns: 20% auto 20%;
+}
+
+p#top {
+    padding-top: 100px;
+    padding-bottom: 18px;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+}
+
+p#bottom {
+    padding-top: 18px;
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 3;
+    padding-bottom: 100px;
+}
+
+.opening h1 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 5px solid #a35279; /* #ff8fc7; */
+    border-bottom: 5px solid  #a35279; /* #ff8fc7; */
+    background-color: rbga(150,150,150,0.5);
+    font-size: 50px;
+    text-transform: uppercase;
+    color: /* #ff8fc7; */ #a35279;
+    text-shadow: 1px 1px 3px white;
+    grid-column: 2 / span 1;
+    justify-self: stretch;
+    align-self: stretch;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+}
+
+#skiptoprojects {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#projects {
+    display: grid;
+    grid-template-rows: 100px auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+#projects + img {
+    width: 500px;
+    height: 300px;
+}
+
+#coding {
+    grid-column: 1 / span 2;
+    font-family: 'Montserrat', serif;
+    font-size: 24px;
+    padding: 20px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+#faceless {
+    padding: 30px;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    object-fit: contain;
+    /* width: 500px;
+    height: 500px; */
+    margin: 10px;
+    border: 3px solid gray;
+}
+
+#facelessimg {
+    width: 500px;
+    height: 180px;
+    object-fit: contain;
+}
+
+#mardigras {
+    padding: 30px;
+    justify-self: center;
+    align-self: center;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    margin: 10px;
+    border: 3px solid gray;
+}
+
+#mardigrasimg {
+    width: 500px;
+    height: 700px;
+    object-fit: contain;
+}
+
+#faceless h5, #faceless p, #mardigras h5, #mardigras p {
+    display: none;
+}
+
+#faceless:hover, #mardigras:hover {
+    opacity: 0.5;
+    display: block;
+    color: black;
+}
+
+#faceless:hover + #facelessh5, #faceless:hover + #facelessp, #mardigras:hover + #mardigrash5, #mardigras:hover + #mardigrasp {
+    display: block;
+    color: black;
+}
+
+/* ---------------------------------------- ABOUT.HTML ---------------------------------------- */
+
+.aboutmeheader {
+    display: grid;
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    background-color: #e6f9fc;
+    background-image: url("../imgs/abstractpink.jpg"); 
+    /* text-align: center; */
+    justify-self: center;
+    align-self: center; 
+    gap: 10px 10px; 
+    /* padding: 100px;
+    padding-left: 300px;
+    padding-right: 300px; */
+    font-size: 16px;
+    font-family: 'Montserrat', serif;
+    grid-row: 1 / auto;
+    grid-column: 1 / -1;
+    padding: 100px;
+}
+
+.aboutmeheader p {
+    text-align: center;
+    font-size: 50px;
+    color: #a35279;
+}
+
+.aboutme {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.aboutme img {
+    max-height: 500px;
+    min-height: 200px;
+    max-width: 400px;
+    min-width: 100px;
+    border-radius: 8%;
+}
+
+.aboutmeparagraph {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 40px 90px;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    overflow: hidden;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.letsconnect {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif; 
+    text-align: center;
+}
+
+p#email {
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+}
