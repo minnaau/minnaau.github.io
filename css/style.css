@@ -164,9 +164,6 @@ footer {
     justify-self: center;
     align-self: center; 
     gap: 10px 10px; 
-    /* padding: 100px;
-    padding-left: 300px;
-    padding-right: 300px; */
     font-size: 16px;
     font-family: 'Montserrat', serif;
     grid-row: 1 / auto;
@@ -176,7 +173,7 @@ footer {
 }
 
 p#top {
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 18px;
     grid-row: 1 / span 1;
     grid-column: 1 / span 3;
@@ -186,7 +183,7 @@ p#bottom {
     padding-top: 18px;
     grid-row: 3 / span 1;
     grid-column: 1 / span 3;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
 }
 
 .opening h1 {
@@ -348,9 +345,17 @@ p#bottom {
 }
 
 .letsconnect {
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    background-color: #e6f9fc;
+    background-image: url("../imgs/abstractyellow.jpg");
+    padding: 100px;
     font-size: 20px;
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Montserrat', sans-serif; 
     text-align: center;
+    color: #a35279;
 }
 
 p#email {
@@ -385,6 +390,42 @@ p#email {
     grid-column: 2 / span 1;
 }
 
+/*Begin your code here*/
+/*Keyframes for animation*/
+
+@-webkit-keyframes logo_wiggle {
+    from {
+        width: 25px;
+    }
+    to {
+        width: 420px;
+    }
+}
+  
+@keyframes logo_wiggle {
+    from {
+        width: 25px;
+    }
+    to {
+        width: 420px;
+    }
+} 
+
+#logo {
+    /*Your code here.*/
+    -webkit-animation: logo_wiggle;
+    animation-name: logo_wiggle;
+    animation-duration: 15s;
+}
+
+/*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce) {
+    #logo {
+        animation-duration: 0s;
+        /*animation: none*/
+    }
+}
+
 /* ---------------------------------------- LAPTOP VIEW ---------------------------------------- */
 
 @media screen and (min-width: 770px) {
@@ -392,3 +433,4 @@ p#email {
 
 
 }
+
