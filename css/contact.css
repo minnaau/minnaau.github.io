@@ -7,8 +7,10 @@ body {
 }
 
 form {
-  display: grid;
+  /* display: grid; */
   /* grid-column: 2; */
+  text-align: center;
+  margin: 40px;
 }
 
 /* legend{ 
@@ -49,10 +51,10 @@ textarea{
   box-sizing: border-box;
 }
 
-input[type=checkbox]{
-    display:inline;
-    width:inherit;
-}
+/* input[type=checkbox]{
+    display: inline;
+    width: inherit;
+} */
 
 input[type=submit] {
   background-color: #a35279;
@@ -61,13 +63,17 @@ input[type=submit] {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  /* width: 100%; */
 }
 
-input[type=submit]:hover {
+input:focus, textarea:focus {
+  border: 3px solid #555;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
   opacity: 0.8;
+  border:none;
 }
-
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (min-width: 770px) {
@@ -83,6 +89,7 @@ input[type=submit]:hover {
   textarea{
     width:80%;
     height: 25vh;
+    resize: none;
   }
   
   div + label{
