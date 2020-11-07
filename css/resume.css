@@ -1,0 +1,13 @@
+/* main {
+    margin: 100px 200px;
+} */
+
+body {
+    margin: 20px 20px;
+    background-color: white;
+    margin: 0;
+}
+
+footer {
+    position: relative;
+}
