@@ -7,11 +7,12 @@ body {
 }
 
 nav {
-    -webkit-transition: top 1s ease-out;	
+    display: none;
+    /* -webkit-transition: top 1s ease-out;	
     transition: top 1s ease-out;	
     z-index: 1;	
     position: absolute;	
-    top: -70px;
+    top: -70px; */
 }
 
 a:link {
@@ -19,5 +20,6 @@ a:link {
 }
 
 footer {
+    display: none;
     position: absolute;
 }
