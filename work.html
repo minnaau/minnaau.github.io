@@ -20,7 +20,8 @@
 <header>
 	<nav>
 		<ul>
-            <li><a href="work.html">Work</a></li>
+			<li><img id="logo" src = "imgs/MApink.jpg" alt = "logo"/></li>
+            <li><a id="currentpage" href="work.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact Me</a></li>
@@ -34,31 +35,62 @@
 
     <div class="opening">
         <p id="top">If you found the right place to click, congrats! Overcoming challenges may not be easy, but we LEARN from our experiences and IMPROVE.</p>
-        <h1>Hi, I'm Minna Au!</h1>
+        <h1 class="anim-typewriter">Hi, I'm Minna Au!</h1>
         <p id="bottom">A designer and developer who is dedicated to gaining new perspectives for a more empathetic view in creating impactful experiences.</p>
     </div>
 
-    <a id="skiptoprojects" href= .projects>Skip to projects</a>
+    <div id="skiptoprojects"><a href=#projects>Skip to projects</a></div>
 
-    <div class="projects">
+    <div id="projects">
 
-        <div class="codingprojectstitle">
+        <div class="projectstitle">
             <h3>Coding Projects</h3>
         </div>  
 
-        <div class="codingprojectsbox">
-            <div id="faceless">
+        <div class="projectsbox">
+            <!-- <div class="project1" tabindex="0">
+                <div class="projectimg"><img src="imgs/facelesslogo.png" alt="Faceless Games' Logo"></div>
+                <div class="projectdesc"><p>Faceless Games</p></div>
+            </div>
+            <div class="project2" tabindex = "0">
+                commentstart<div class="projectimg"> commentend <img src="imgs/mardigras.jpg" alt="Faceless Games' Logo">commentstart</div> commentend
+                commentstart <div class="projectdesc">commentend<p>Mardi Gras Parade Game</p> commentstart</div> commentend
+            </div> -->
+
+            <div class="project1">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="imgs/facelesslogo.png" alt="Faceless Games' Logo">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Faceless Games</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="project2">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="imgs/mardigras.jpg" alt="Mardi Gras Parade Game's Logo">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Mardi Gras Parade</p>
+                  </div>
+                </div>
+            </div>
+              
+            <!-- <div id="project1">
                 <img id="facelessimg" src="imgs/facelesslogo.png" alt="Faceless Games' Logo">
                 <p id="facelesstitle">Faceless Games</p>
             </div>
-    
-            <div id="mardigras">
+
+            <div id="project2">
                 <img id="mardigrasimg" src="imgs/mardigras.jpg" alt="Mardi Gras Parade Game">
                 <div id="mardigrastext">
                     <p id="mardigrastitle">Mardi Gras Parade Game</p>
                     <p id="mardigrasp">HTML, CSS, Javascript</p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- <div class="techprojectstitle">
