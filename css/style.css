@@ -123,6 +123,10 @@ footer {
     color: #b33902;
 }
 
+.door {
+    height: 120px;
+}
+
 #here1 {
     background-color:#f2f3fc;
     border: 3px solid #518e91;
@@ -184,6 +188,8 @@ footer {
 #here3:hover {
     text-decoration: underline;
     border-radius: 5px;
+    background-color: #edc44a;
+    border-color: #a87132;
 }
 
 .next {
@@ -253,10 +259,6 @@ p#bottom {
     margin-bottom: 15px; */
 }
 
-/* .hiimminnaau {
-    transform: translateY(-50%);
-} */
-
 .anim-typewriter {
     animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
 }
@@ -270,9 +272,11 @@ p#bottom {
 }
 
 #projects {
-    display: grid;
-    grid-template-rows: 100px auto 100px auto;
-    /* grid-template-columns: 1fr 1fr; */
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-rows: 100px auto 100px auto; */
+    /*grid-template-columns: 1fr 1fr; */
 }
 
 /* .projects + img {
@@ -282,7 +286,7 @@ p#bottom {
 
 .projectstitle{
     /* grid-column: 1 / span 2; */
-    grid-row: 1;
+    /* grid-row: 1; */
     font-family: 'Montserrat', serif;
     font-size: 24px;
     padding: 20px;
@@ -291,9 +295,8 @@ p#bottom {
 }
 
 .projectsbox {
-    grid-row: 2;
-    display: flex;
-    flex-flow: row wrap;
+    /* grid-row: 2; */
+    /*flex-flow: row wrap;*/
     justify-content: space-evenly;
     padding-bottom: 70px;
     max-width: 500px; /* 50vh */
@@ -313,8 +316,6 @@ p#bottom {
 
 .project1 {
     padding: 30px;
-    justify-self: center;
-    align-self: center;
     /* grid-column: 1 / span 1;
     grid-row: 2 / span 1; */
     object-fit: contain;
@@ -323,7 +324,6 @@ p#bottom {
     margin: 10px;
     border: 3px solid gray;
     text-align: center;
-    max-width: 50vh;
 }
 
 /* #facelessimg {
@@ -339,13 +339,12 @@ p#bottom {
 
 .project2 {
     padding: 30px;
-    justify-self: center;
-    align-self: center;
     /* grid-column: 2 / span 1;
     grid-row: 2 / span 1; */
     margin: 10px;
     border: 3px solid gray;
     text-align: center;
+    max-width: 50vh;
 }
 
 /* #mardigrasimg {
@@ -553,6 +552,13 @@ p#email {
     padding: 100px;
 }
 
+.resumecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #resume {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -573,6 +579,13 @@ p#email {
     text-align: center;
     color: #a35279;
     padding-top: 0px;
+}
+
+#downloadresume {
+    font-family: 'Raleway', serif;
+    text-align: center;
+    padding-top: 30px;
+    color: #0000FF;
 }
 
 /* .resumehead {

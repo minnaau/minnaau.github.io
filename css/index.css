@@ -2,21 +2,16 @@ body {
     background-size: cover ;
     background-position: center;
     background-image: url("../imgs/pinkbg.jpg"); 
-    /*Why do I need the ../ here but not for css files?*/
     background-color: #e1f4fa;
 }
 
 nav {
     display: none;
-    /* -webkit-transition: top 1s ease-out;	
-    transition: top 1s ease-out;	
-    z-index: 1;	
-    position: absolute;	
-    top: -70px; */
 }
 
 a:link {
     text-decoration: none;
+    color: black;
 }
 
 footer {
