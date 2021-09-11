@@ -309,11 +309,16 @@ p#bottom {
 .projectsbox {
     /* grid-row: 2; */
     /*flex-flow: row wrap;*/
-    justify-content: space-evenly;
+    margin: auto;
     padding-bottom: 70px;
     max-width: 500px; /* 50vh */
     text-align: center;
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+
 }
 
 /* .codingprojectbox #faceless img, .codingprojectbox #mardigras img {
