@@ -558,7 +558,7 @@ p#email {
     background-repeat: no-repeat; /* Parallax effect */
     background-size: cover;       /* Parallax effect */
     background-color: #e6f9fc;
-    background-image: url("../imgs/abstractlightblue.png");
+    background-image: url("../imgs/abstractlightblue.jpg");
     justify-self: center;
     align-self: center; 
     gap: 10px 10px; 
